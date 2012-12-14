@@ -1,6 +1,6 @@
 from llkdll import sample,click,get_wnd_offset,find_wnd
 from llkai import Linkable
-from arbin import hotkey
+import hotkey
 from ctypes import windll
 import config
 
@@ -68,7 +68,7 @@ def work_once():
         click_grid(_wnd,r2,c2)
        # print(r1,c1,r2,c2,"            ",s)
 
-config.current_info=config.llk_48
+config.current_info=config.llk_qq
 hotkey.reg(0,hotkey.VK_F10,work_once)
 
 #hk.reg(hk.MOD_CONTROL,50,reset)
